@@ -33,7 +33,7 @@ class RijksBot < Ebooks::Bot
     random_number = rand(0..9)
     random_object_image_url = images["artObjects"][random_number]["webImage"]["url"]
     random_object_title = images["artObjects"][random_number]["longTitle"]
-    reply_text = 'Found: #{random_object_title} #{random_object_image_url}'
+    reply_text = "Found: #{random_object_title} #{random_object_image_url}"
     
     reply(tweet, reply_text)
   end
